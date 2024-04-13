@@ -17,15 +17,15 @@ namespace Module._9._6._1
 
         public void StartProgram(List<string> items)
         {
-
             Console.WriteLine("Получен список имен:");
+
             foreach (var item in items)
             {
 
-            Console.WriteLine(item); 
-            
+                Console.WriteLine(item);
+
             }
-           
+
             while (true)
             {
                 Console.WriteLine();
@@ -50,10 +50,8 @@ namespace Module._9._6._1
 
                 }
 
-                catch (Exception ex) { Console.WriteLine(ex.ToString()); }
-
-
-             }
+                catch (myException ex) { Console.WriteLine(ex.Message); }
+            }
         }
     }
 }
